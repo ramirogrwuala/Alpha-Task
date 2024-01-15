@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grabinski Ramiro - Test Task</title>
+</head>
+<body>
+<main>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <a href="#home"><img src="/img/logo-header.svg" alt="Your Company Logo" class="logo-desktop"></a>
+                <a href="#home"></a><img src="/img/logo-header.svg" alt="Your Company Logo" class="logo-mobile"></a>
+            </div>
+            <div class="mobile-menu">
+                <img src="/img/burger-menu.svg" alt="Mobile menu" id="menu-icon">
+                <ul class="mobile-menu-list" id="mobile-menu-list">
+                    <img src="/img/close-icon.svg" alt="Close menu" id="close-icon" height="20px">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#book">Book Online</a></li>
+                    <li><a href="#weightloss">Weight Loss Programs</a></li>
+                    <li><a href="#realstories">Real Patient Stories</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#subscription">Subscription</a></li>
+                </ul>
+            </div>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#book">Book Online</a></li>
+                    <li><a href="#weightloss">Weight Loss Programs</a></li>
+                    <li><a href="#realstories">Real Patient Stories</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#subscription">Subscription</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="hero-section">
+                <img class="elipse-hero" src="/img/elipse.svg" alt="elipse-home">
+                <div>
+                    <h1 class="hero-text">Chicago's <span>Free</span> Medical Check-Up and Weight Loss Consultation</h1>
+                </div>
+                <div class="countdown-container">
+                    <p>Your offer ends in:</p>
+                    <div id="countdown">
+                      <div class="time-section">
+                        <span>DAYS</span>
+                        <span class="countdown-item" id="days">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>HOURS</span>
+                        <span class="countdown-item" id="hours">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>MINUTES</span>
+                        <span class="countdown-item" id="minutes">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>SECONDS</span>
+                        <span class="countdown-item" id="seconds">00</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="toggles-faq">
+                    <div class="faq-question" onclick="toggleFAQ('faq1')">
+                        <p class="qaa">Why is it free?</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="faq1"><p class="qaa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor scelerisque risus eget congue. Nullam placerat justo elit, vel ultrices diam varius a. Donec pharetra, enim nec scelerisque sagittis, metus.</p></div>
+                    <div class="faq-question" onclick="toggleFAQ('faq2')">
+                        <p class="qaa">What You’ll Get At Your Free Consultation?</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="faq2"><p class="qaa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor scelerisque risus eget congue. Nullam placerat justo elit, vel ultrices diam varius a. Donec pharetra, enim nec scelerisque sagittis, metus.</p></div>
+                    <div class="faq-question" onclick="toggleFAQ('faq3')">
+                        <p class="qaa">How long does it take?</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="faq3"><p class="qaa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor scelerisque risus eget congue. Nullam placerat justo elit, vel ultrices diam varius a. Donec pharetra, enim nec scelerisque sagittis, metus.</p></div>
+                </div>        
+            </div>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;
+    height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-desktop {
+    width: 138px;
+    height: 62px;
+    margin-right: 35px;
+}
+
+.logo-mobile {
+    display: none;
+    width: 88px;
+    height: 40px;
+}
+
+.desktop-menu {
+    display: flex;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    padding:0;
+}
+
+.desktop-menu li {
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.mobile-menu {
+    display: none;
+    align-items: center;
+}
+
+#menu-icon{
+    width: 3rem;
+    height: 2rem;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(26%) saturate(2645%) hue-rotate(278deg) brightness(90%) contrast(91%);
+}
+
+.mobile-menu img {
+    cursor: pointer;
+    padding: 15px;
+    align-self: self-end;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    padding: 12px;
+    border-radius: 0px 0px 0px 20px;
+    margin:0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #DD71C6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;  
+    font-size: 15px;
+    font-weight: 600;  
+    box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+    transform: translateY(-100%); 
+    visibility: hidden; 
+    margin-right: 0; 
+}
+
+.mobile-menu-list.show {
+    display: flex;
+    gap: 10px;
+    z-index: 9;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+.mobile-menu-list li {
+    padding: 10px 0px 10px 0px;
+}
+
+.mobile-menu-list li a{
+    text-decoration: none;
+    color:white;
+}
+
+.hero-section{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.elipse-hero{
+    position: absolute;
+    right: 0;
+}
+
+.hero-text, .faq-section h2{
+    font-family: Libre Bakersville;
+    font-weight: 500;
+}
+
+.faq-section h2{
+    font-size:30px;
+    line-height: 38.4px;
+}
+
+.hero-text span{
+    color:#DD71C6;
+}
+
+.countdown-container {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    width: 281px;
+    height: 159px;
+    background-color: #FFFFFF82;
+    box-shadow: 0px 4px 40px 0px #0000001A;
+    border-radius: 30px;
+    backdrop-filter: blur(10px)
+}
+
+.countdown-container p{
+    padding: 15px;
+    font-size: 12px;
+    line-height: 19.01px;
+}
+  
+#countdown {
+    display: flex;
+    justify-content: center;
+}
+  
+.time-section {
+    margin: 0 10px;
+    color:#4c4b43 ;
+}
+  
+.time-section span {
+    font-size: 8px;
+    line-height: 14.23px;
+    color: #0083D3;
+    letter-spacing: 2px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+
+.time-section .countdown-item{
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32.02px;
+}
+
+.faq-section{
+        background: white;
+        padding:30px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 4px 18px 4px 8px;
+    height: 38px;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+
+.fa-chevron-down{
+    color:#DD71C6;
+    height: 10px;
+    width: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.show {
+    display: block;
+    max-height: 500px;
+}
+
+.toggles-faq{
+    background: white;
+}
+
+.qaa{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24.15px;
+    margin-left: 1em;
+}
+
+/*Desktop only*/
+@media only screen and (min-width: 1120px) {
+    main::before {
+        content: "";
+        background-color: #FFD900;
+        width: 35%;
+        height: 700px;
+        border-top-left-radius: 15%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .container{
+        max-width: 1220px;
+        margin: auto;
+    }
+
+    header{
+        justify-content: flex-start;
+    }
+
+    .hero-section{
+        margin-bottom: 150px;
+    }
+
+    .elipse-hero{
+        width: 436px;
+        height: 436px;
+        top: 123px;
+    }
+
+    .hero-text{
+        font-size: 55px;
+        line-height: 67.5px;
+        width: 437px;
+        height: 272px;
+        margin: 60px 10px 30px;
+    }
+
+    .countdown-container{
+        width: 629px;
+        height: 321px;
+        margin: 100px 74px 36px;
+    }
+
+    .countdown-container p{
+        font-size: 18px;
+        padding:40px;
+    }
+
+    .time-section span{
+        font-size: 18px;
+        line-height: 32.02px;
+        letter-spacing: 5px;
+        font-weight: 500;
+    }
+
+    .time-section .countdown-item{
+        padding: 30px;
+        font-size: 50px;
+        line-height: 88.95px;
+        font-weight: 500;
+    }
+
+    .faq-section h2{
+        font-size:32px;
+        line-height: 51.2px;
+    }
+
+    .faq-section{
+        width: 1138px;
+        margin:0px;
+    }
+}
+
+/*Mobile only*/
+@media only screen and (max-width: 768px) {
+    main::before {
+        content: "";
+        background-color: #FFD900;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    #close-icon {
+        margin: 5px 25px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        width: 281px;
+    }
+
+    .elipse-hero{
+        width: 289px;
+        height: 289px;
+        top: 151px;
+    }
+
+    .hero-text {
+        text-align: center;
+        font-size: 38px;
+        line-height: 47px;
+        font-weight: 400;
+    }
+
+    .faq-section {
+        max-width: 308px;
+        margin: 65px auto;
+    }
+}
+
+/*Tablet generals*/
+
+@media (min-width: 769px) and (max-width: 1119px){
+    .hero-section::before {
+        content: "";
+        background-color: #FFD900;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 40px;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: -1;
+    }
+
+    .container{
+        max-width: 739px;
+        margin: auto;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        width: 281px;
+    }
+
+    .elipse-hero{
+        width: 289px;
+        height: 289px;
+        top:151px;
+    }
+
+    .hero-text{
+        width: 432px;
+        font-size: 36px;
+        /*sorry for this*/
+        margin-left: -200px;
+        line-height: 54px;
+    }
+
+    .countdown-container{
+        width:394px;
+        height: 223px;
+    }
+
+    .countdown-container p{
+        font-size: 16px;
+        line-height: 25.34px;
+    }
+
+    .time-section span{
+        font-size: 12px;
+        line-height: 21.25px;
+        letter-spacing: 3px;
+    }
+
+    .time-section .countdown-item{
+        font-size: 36px;
+        line-height: 64px;
+    }
+
+    .faq-section{
+        max-width: 439px;
+        margin: 25% auto;
+    }
+} 
